@@ -1,3 +1,5 @@
+
+
 # Tarea 1:
 # Clases
 class Matriz:
@@ -76,38 +78,134 @@ class Punto:
     __z:float
 
     def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
-
+        self.__x = x
+        self.__y = y
+        self.__z = z
+    
     # Para sumar y multiplicar con un escalar, aparte del escalar a usar, se pide varios argumentos para determinar que ejes se quiere sumar/multiplicar.
     # Función de suma de un escalar con uno o más ejes.
     def suma(self, k, *arg):
         for i in range(len(arg)):
             match arg[i]:
                 case "x":
-                    self.x += k
+                    self.__x += k
                 case "y":
-                    self.y += k
+                    self.__y += k
                 case "z":
-                    self.z += k
+                    self.__z += k
 
     # Función de multiplicación de un escalar con uno o más ejes.
     def multi(self, k, *arg):
         for i in range(len(arg)):
             match arg[i]:
                 case "x":
-                    self.x *= k
+                    self.__x *= k
                 case "y":
-                    self.y *= k
+                    self.__y *= k
                 case "z":
-                    self.z *= k
+                    self.__z *= k
 
     # Función para imprimir el punto.
     def show(self):
-        print("(", B.x, ",", B.y, ",", B.z, ")")
+        print("(", self.__x, ",", self.__y, ",", self.__z, ")")
+
+# Definimos la clase vector, hijo de la clase punto.
+class Vector(Punto):
+    __X:float
+    __Y:float
+    __Z:float
+
+
+    def __init__(self, x, y, z):
+        self.__X = x
+        self.__Y = y
+        self.__Z = z
+        # Usamos super() para poder usar el esquema del padre ya que de otro modo al usar sus funciones da error.
+        super().__init__(x, y, z)
+
+    def magnitud(self):
+        return (self.__X**2 + self.__Y**2 + self.__Z**2)**0.5
 
 # Poliformismo
+# Importamos una lbrería nativa para simular el tiempo de clectura/escritura del disco.
+import time
+
+# Creamos las tres clases que representan las memorias
+class DiscoDuro:
+    memory:list
+
+    def __init__(self, N:int):
+        self.memory = []
+        # Para simular la memoria vamos a crear una lista con N elementos, inicialmente todos 0.
+        for i in range(N):
+            self.memory.append(0)
+
+    def escritura(self, p, data):
+        print("Iniciando escritura (Disco Duro)...")
+        # Usamos time.sleep() para simular el retardo en la lectura.
+        time.sleep(5)
+        self.memory[p] = data
+        print("Escrito en 5s")
+        
+        
+    def lectura(self, p):
+        print("Iniciando lectura (Disco Duro)...")
+        time.sleep(5)
+        print(self.memory[p])
+        print("Leido en 5s")
+
+class RAM:
+    memory:list
+
+    def __init__(self, N:int):
+        self.memory = []
+        # Para simular la memoria vamos a crear una lista con N elementos, inicialmente todos 0.
+        for i in range(N):
+            self.memory.append(0)
+
+    def escritura(self, p, data):
+        print("Iniciando escritura (RAM)...")
+        # Usamos time.sleep() para simular el retardo en la lectura.
+        time.sleep(2)
+        self.memory[p] = data
+        print("Escrito en 2s")
+        
+        
+    def lectura(self, p):
+        print("Iniciando lectura (RAM)...")
+        time.sleep(2)
+        print(self.memory[p])
+        print("Leido en 2s")
+
+class SRAM:
+    memory:list
+
+    def __init__(self, N:int):
+        self.memory = []
+        # Para simular la memoria vamos a crear una lista con N elementos, inicialmente todos 0.
+        for i in range(N):
+            self.memory.append(0)
+
+    def escritura(self, p, data):
+        print("Iniciando escritura (SRAM)...")
+        # Usamos time.sleep() para simular el retardo en la lectura.
+        time.sleep(0.5)
+        self.memory[p] = data
+        print("Escrito en 500ms")
+        
+        
+    def lectura(self, p):
+        print("Iniciando lectura (SRAM)...")
+        time.sleep(0.5)
+        print(self.memory[p])
+        print("Leido en 500ms")
+
+# Creamos las funciones polimorficas que nos servirán para leer/escribir sin importar la clase de la memoria.
+def escritura(dispositivo, p, data):
+    dispositivo.escritura(p, data)
+
+def lectura(dispositivo, p):
+    dispositivo.lectura(p)
 
 # Main de script de prueba para las actividades
 if __name__ == "__main__":
@@ -138,7 +236,9 @@ if __name__ == "__main__":
 
     #Prueba de la Actividad 2
     B = Punto(4, 2, 7)
-    print("\n\nAhora tenemos un punrto B = (", B.x, ",", B.y, ",", B.z, "). A continuación vamos a sumar 3 al eje \"x\" y \"z\" del punto B:")
+    print("\n\nAhora tenemos un punto B = ", end = " ") 
+    B.show()
+    print("\nA continuación vamos a sumar 3 al eje \"x\" y \"z\" del punto B:")
     
     B.suma(3, "x", "z")
     B.show()
@@ -147,3 +247,38 @@ if __name__ == "__main__":
 
     B.multi(2, "y")
     B.show()
+
+    print("\nAhora tenemos un vector C =", end = " ")
+    
+    C = Vector(7, 4, 2)
+    C.show()
+
+    print("\nCalculamos su magnitud:", C.magnitud())
+
+    #Prueba de la Actividad 3
+    print("\n\nFinalmente, se simula un Disco Duro, RAM y SRAM, originalmente vacios.")
+    D = DiscoDuro(5)
+    print(D.memory)
+
+    R = RAM(10)
+    print(R.memory)
+
+    Sr = SRAM(36)
+    print(Sr.memory)
+
+    print("\nPasando a llenarlos con algún dato cualquiera, para luego imprimirlos.\n")
+
+    escritura(D, 1, "Dato 1")
+    print("")
+    lectura(D, 1)
+    print("")
+
+    escritura(R, 5, "Dato 2")
+    print("")
+    lectura(R, 5)
+    print("")
+
+    escritura(Sr, 17, "Dato 3")
+    print("")
+    lectura(Sr, 17)
+    print("")
