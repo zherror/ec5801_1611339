@@ -1,6 +1,13 @@
+"""
+UNIVERSIDAD SIMÓN BOLÍVAR
+Departamento de Electrónica y Circuitos
+Materia: EC5801 - Sistemas Embebidos 1
+Trimestre: Abril - Julio 2026
 
+Asignación: Tarea 1
+Autor: Gerónimo Velasco
+"""
 
-# Tarea 1:
 # Clases
 class Matriz:
     N:float# Columnas
