@@ -5,7 +5,8 @@ Repositorio para los ejercicios de la materia Sistemas Embebidos I, de la Univer
 
 **Clases**
 
-1. Deben desarrollar una clase que describa una matriz de orden N x M, donde N representa las columnas y M las Filas.
+1. Deben desarrollar una clase que describa una matriz de orden N x M, donde N representa las columnas y M las filas.
+
 2. Para esta clase haciendo uso de sustitución de operaciones por polimorfismo deben implementar las operaciones matriciales de suma, resta, multiplicación y deshabilitar la división.
 3. Deben generar un método para imprimir las matrices en consola de manera organizada.
 
