@@ -4,7 +4,7 @@ Departamento de Electrónica y Circuitos
 Materia: EC5801 - Sistemas Embebidos 1
 Trimestre: Abril - Julio 2026
 
-Asignación: Tarea 1
+Asignación: Tarea 2
 Autor: Gerónimo Velasco
 """
 
