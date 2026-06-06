@@ -1,4 +1,4 @@
-## Tarea 3
+## Tarea 3 (Fecha de entrega: 05/06/2026):
 
 **Importación de Módulos Necesarios**
 
