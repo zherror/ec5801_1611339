@@ -4,7 +4,7 @@
 
 El objetivo de esta tarea es diseñar e implementar un sistema de mensajería robusto que permita el intercambio de datos entre hilos, de forma segura haciendo uso del módulo queue de Python.
 
-## Gestión de Colas
+**Gestión de Colas**
 
 Deben desarrollar un gestor de colas como una clase central llamada Messages_Manager la cual debe permitir crear y eliminar colas en tiempo de ejecución.
 
@@ -14,13 +14,13 @@ Deben desarrollar un gestor de colas como una clase central llamada Messages_Man
 
 - **Eliminación Segura:** Implementar el método delete para remover colas del sistema y liberar los recursos asociados, asegurando que posteriormente no se pueda acceder a los identificadores utilizados con anterioridad.
 
-## Sincronización y Exclusión Mutua (Mutex)
+**Sincronización y Exclusión Mutua (Mutex)**
 
 Se debe garantizar la integridad de las estructuras de datos compartidas dicts mediante el uso de bloqueos locks.
 
 - **Protección de Recursos:** Usando los objetos de tipo Lock se debe asegurar que todas las operaciones de lectura y escritura sobre los diccionarios internos estén protegidas.
 
-## Intercambio de Mensajes
+**Intercambio de Mensajes**
 
 Se debe implementar los mecanismos de envío, recepción y procesamiento automático de mensajes de forma que pueda seguir el flujo principal de ejecución.
 
@@ -28,11 +28,11 @@ Se debe implementar los mecanismos de envío, recepción y procesamiento automá
 
 - **Recepción No Bloqueante:** Implementar el método receive para extraer datos de una cola. Se debe configurar para que sea una operación de tipo no bloqueante, manejando adecuadamente los casos donde la cola esté vacía para evitar errores.
 
-## Polling
+**Polling**
 
 - **Mecanismo de Polling:** Desarrollar un método poll. Este método debe iterar sobre todas las colas activas y, si detecta datos entrantes debe recibirlos, para posteriormente ejecutar automáticamente el callback asociado a cada cola.
 
-## Restricciones y Entrega
+**Restricciones y Entrega**
 
 - **Prohibición de IA:** No se permite el uso de herramientas de inteligencia artificial para la resolución de la tarea.
 
