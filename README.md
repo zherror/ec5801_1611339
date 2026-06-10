@@ -1,4 +1,5 @@
 # EC5801_1611339
+
 Repositorio para los ejercicios de la materia Sistemas Embebidos I, de la Universidad Simón Bolívar.
 
 ## Tarea 1 (Fecha de entrega: 15/05/2026):
@@ -33,33 +34,34 @@ Repositorio para los ejercicios de la materia Sistemas Embebidos I, de la Univer
 **Manejo de Archivos**
 
 1. Haciendo uso del manejador de archivos integrado en Python deben generar dos funciones que permitan hacer lo siguiente:
-	+ Permitir Leer la información de un archivo sea de texto o binario.
-	+ Permitir Escribir la información a un archivo de texto o binario.
+   
+   + Permitir Leer la información de un archivo sea de texto o binario.
+   + Permitir Escribir la información a un archivo de texto o binario.
 
 2. En base a estas funciones generar una clase que las contenga como método. Haciendo una verificación de que la ruta es valida utilizando la clase de tipo Path.
 
 **PyYAML**
 
 1. Usando la clase para el manejador de archivos como clase padre, generar una clase hija que herede sus métodos. Estos métodos se utilizarán como la base del stream de datos para las funciones de la librería PyYAML.
-	
+
 2. Generar un método para la clase hija que permita abrir un archivo, pasar su stream de datos a la librería PyYAML y de esa forma sintetizar el diccionario asociado al archivo ‘.yaml‘.
-	
+
 3. El diccionario obtenido debe guardarse en un diccionario privado interno de la clase, siguiendo el siguiente esquema:
 
 ```
 {
-	name:{
-		path: str,
-		data: dict
-	},
-	...
+    name:{
+        path: str,
+        data: dict
+    },
+    ...
 }
 ```
 
 4. Para obtener el valor del archivo se debe tener una función de tipo GETTER, que permita obtener los diccionarios correspondientes basados en el nombre asignado.
-	
+
 5. Se debe tener un método adicional que permita modificar un diccionario ya pre-existente usando su nombre como identificador.
-	
+
 6. Por último, debe existir un método que permita guardar los valores modificados de el diccionario modificado en el disco haciendo uso de los streams de datos y la librería PyYAML.
 
 **Decoradores y Schemas**
@@ -69,21 +71,21 @@ Repositorio para los ejercicios de la materia Sistemas Embebidos I, de la Univer
 ```
 @schema_validator(schema)
 def función_1(*args):
-	…
+    …
 ```
-	
+
 2. Un Schema es un validador para asegurarse que los datos de un diccionario contienen los tipos asignados y así evitar cualquier error al momento de utilizar los mismos. Ejemplo de un Schema:
 
 ```
 {
-	"key":int,
-	"key_2":{
-		"variable":str,
-		"lista":list
-	}
+    "key":int,
+    "key_2":{
+        "variable":str,
+        "lista":list
+    }
 }
 ```
-	
+
 3. El schema que deben validar viene dado por el archivo .yaml a generar. Para esta tarea en particular este archivo aceptara N cantidad de elementos con los siguientes ítems: nombre, altura, peso, edad, lista de habilidades, descripcion.
 
 **Restricciones**
@@ -115,7 +117,6 @@ Objetivo: Familiarizarte con la biblioteca logging de Python, que viene instalad
 
 2. Asegúrate de implementar y demostrar el uso de los distintos niveles de registro (o severidad) de mensajes: DEBUG, INFO, WARNING, y ERROR.
 
-
 --- 
 
 **Gestión Avanzada de Hilos (Threading)**
@@ -142,7 +143,6 @@ Requisitos de la Clase Gestora:
 
 9. Inicio de Ejecución: Se debe implementar el método Thread_Start. Este método recibirá el nombre de un hilo registrado y comenzará su ejecución, respetando y gestionando los límites de concurrencia establecidos.
 
-
 ---
 
 **Sincronización con Eventos (Threading.Event)**
@@ -158,3 +158,45 @@ Requisitos de Ampliación:
 3. Propósito: Esta implementación busca hacer síncrona la finalización de la ejecución del hilo (a través del evento y el join()) antes de que el resto del código principal del programa continúe su flujo.
 
 4. Detención de Hilos por Nombre: Implementa el método Thread_End en el Gestor de Hilos. Este método debe recibir el nombre de un hilo y, utilizando el objeto Event de terminación, señalar la detención de la ejecución para que el hilo pueda finalizar de forma controlada.
+
+## Tarea 4 (Fecha de entrega: 12/05/2026):
+
+### Comunicación Inter-Hilos con Colas Seguras
+
+El objetivo de esta tarea es diseñar e implementar un sistema de mensajería robusto que permita el intercambio de datos entre hilos, de forma segura haciendo uso del módulo queue de Python.
+
+**Gestión de Colas**
+
+Deben desarrollar un gestor de colas como una clase central llamada Messages_Manager la cual debe permitir crear y eliminar colas en tiempo de ejecución.
+
+- **Creación de Colas:** Implementar el método create. Este método debe generar una instancia de Queue recibiendo el máximo valor de parámetros que la cola podrá y asociarla a un identificador único (nombre) en un diccionario interno.
+
+- **Asociación de Callbacks:** El método de creación debe permitir asignar una función con el tipo genérico Callable en un segundo diccionario interno, asociando por el identificador único (nombre).
+
+- **Eliminación Segura:** Implementar el método delete para remover colas del sistema y liberar los recursos asociados, asegurando que posteriormente no se pueda acceder a los identificadores utilizados con anterioridad.
+
+**Sincronización y Exclusión Mutua (Mutex)**
+
+Se debe garantizar la integridad de las estructuras de datos compartidas dicts mediante el uso de bloqueos locks.
+
+- **Protección de Recursos:** Usando los objetos de tipo Lock se debe asegurar que todas las operaciones de lectura y escritura sobre los diccionarios internos estén protegidas.
+
+**Intercambio de Mensajes**
+
+Se debe implementar los mecanismos de envío, recepción y procesamiento automático de mensajes de forma que pueda seguir el flujo principal de ejecución.
+
+- **Envío de Datos:** Crear el método send que deposite información en una cola específica basándose en su nombre. Esta operación debe ser segura para hilos y bloqueante en caso de que la cola este totalmente llena.
+
+- **Recepción No Bloqueante:** Implementar el método receive para extraer datos de una cola. Se debe configurar para que sea una operación de tipo no bloqueante, manejando adecuadamente los casos donde la cola esté vacía para evitar errores.
+
+**Polling**
+
+- **Mecanismo de Polling:** Desarrollar un método poll. Este método debe iterar sobre todas las colas activas y, si detecta datos entrantes debe recibirlos, para posteriormente ejecutar automáticamente el callback asociado a cada cola.
+
+**Restricciones y Entrega**
+
+- **Prohibición de IA:** No se permite el uso de herramientas de inteligencia artificial para la resolución de la tarea.
+
+- **Librerías Permitidas:** Solo se pueden utilizar módulos estándar de Python, específicamente `logging`, `threading`, y `queue`.
+
+- **Registro de Eventos:** El gestor debe incluir un sistema de `logging` interno que registre la creación, envío, recepción y errores del sistema.
