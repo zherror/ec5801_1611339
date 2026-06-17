@@ -1,4 +1,4 @@
-## Tarea 4 (Fecha de entrega: 12/05/2026):
+## Tarea 4 (Fecha de entrega: 12/06/2026):
 
 # Comunicación Inter-Hilos con Colas Seguras
 

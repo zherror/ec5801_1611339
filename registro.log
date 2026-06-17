@@ -1,0 +1,231 @@
+2026-06-14 22:16:55 - INFO - Iniciando 1er hilo...
+2026-06-14 22:16:57 - INFO - Terminó el 1er hilo.
+2026-06-14 22:16:57 - INFO - Iniciando 2er hilo...
+2026-06-14 22:17:02 - INFO - Terminó el 2er hilo.
+INFO - Iniciando 1er hilo...
+INFO - Terminó el 1er hilo.
+INFO - Iniciando 2er hilo...
+INFO - Terminó el 2er hilo.
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Terminó el 1er hilo.
+INFO - Terminó el 2er hilo.
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+INFO - Iniciando 1er hilo...
+INFO - Iniciando 2er hilo...
+ERROR - La cola ya existe o el <name> ya fue usado.
+INFO - Se creo la cola correctamente.
+ERROR - La cola ya existe o el <name> ya fue usado.
+ERROR - La cola ya existe o el <name> ya fue usado.
+INFO - Se creo la cola {name} correctamente.
+ERROR - La cola ya existe o el <name> ya fue usado.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> ya fue usado.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name>=Casa ya fue usado.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - El cola Pera está vacia.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Toronja correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Toronja correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Inició el poll...
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+INFO - Terminó el poll.
+INFO - Se creo la cola Casa correctamente.
+ERROR - La cola ya existe o el <name> = Casa ya fue usado.
+INFO - Se elimino la cola Casa correctamente.
+ERROR - La cola Casa no existe.
+INFO - Se creo la cola Pera correctamente.
+INFO - Se creo la cola Toronja correctamente.
+INFO - Se envió el dato correctamente a la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+ERROR - La cola Pera está vacia.
+ERROR - El <name> = Manzana no existe.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Pera.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Se envió el dato correctamente a la cola Toronja.
+INFO - Inició el poll...
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Pera.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+WARNING - Una vez extraido el dato de la cola, ya no está en la misma y no es recuperable.
+INFO - Se recibió el dato correctamente de la cola Toronja.
+INFO - Terminó el poll.
